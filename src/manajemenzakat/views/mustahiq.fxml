@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="parent" style="-fx-background-color: #ffffffd7;" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manajemenzakat.controller.child.MustahiqController">
+   <children>
+      <VBox alignment="CENTER" style="-fx-background-color: #00a0b1;">
+         <children>
+            <Label text="Mustahiq berarti orang yang memiliki hak untuk menerima harta zakat atau orang yang berhak mendapatkan distribusi dari dana zakat.[Syahril Jamil, 2015. PRIORITAS MUSTAHIQ ZAKAT MENURUT TEUNGKU MUHAMMAD HASBI ASH SHIDDIEQY]" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <VBox VBox.vgrow="ALWAYS">
+         <children>
+            <HBox>
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="bPrint" onAction="#optionMustahiqPrint" style="-fx-background-color: #828282; -fx-background-radius: 2px;" text="PRINT" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PRINT" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="bExcel" layoutX="10.0" layoutY="10.0" onAction="#optionMustahiqExcel" ripplerFill="#656565" style="-fx-background-color: #07dd23; -fx-background-radius: 2px;" text="EXCEL" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="FILE" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXTextField fx:id="tfOptionMustahiqSearch" focusColor="#409aa8" onKeyPressed="#onKeyPress" prefHeight="25.0" prefWidth="92.0" />
+                        <JFXButton onAction="#optionMustahiqSearch" text="CARI">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="SEARCH" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ScrollPane id="scrlv2" fx:id="spMustahiqList" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-fit-to-height: false;" VBox.vgrow="ALWAYS" />
+            <HBox alignment="CENTER_LEFT" spacing="5.0">
+               <children>
+                  <JFXButton fx:id="bPrevMustahiq" onAction="#getPrevPage" ripplerFill="#dddddd" style="-fx-background-color: #00a0b1; -fx-background-radius: 2px;" text="Prev" textFill="WHITE" />
+                  <Label fx:id="lPageMustahiq" text="1/1">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="bNextMustahiq" layoutX="714.0" layoutY="10.0" onAction="#getNextPage" ripplerFill="#dddddd" style="-fx-background-color: #00a0b1; -fx-background-radius: 2px;" text="Next" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <effect>
+            <DropShadow color="#ffffff2a" height="10.62" radius="4.4399999999999995" width="9.14" />
+         </effect>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

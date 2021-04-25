@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ManajemenZakat.jnlp">
+  <information>
+    <title>ManajemenZakat</title>
+    <vendor>TOSHIBA</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ManajemenZakat.jar" size="286143" download="eager" />
+    <jar href="lib/FXExperienceControls.jar" size="230842" download="eager" />
+    <jar href="lib/ant.jar" size="2283169" download="eager" />
+    <jar href="lib/avalon-framework-4.1.4.jar" size="72851" download="eager" />
+    <jar href="lib/commons-beanutils-1.9.3.jar" size="246174" download="eager" />
+    <jar href="lib/commons-codec-1.10.jar" size="284184" download="eager" />
+    <jar href="lib/commons-collections-3.2.1-1.0.0.jar" size="590365" download="eager" />
+    <jar href="lib/commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib/commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib/fluent-hc-4.5.6.jar" size="31528" download="eager" />
+    <jar href="lib/fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib/groovy-all_2.4.5.jar" size="7072022" download="eager" />
+    <jar href="lib/itext-2.1.7.js6-SNAPSHOT.jar" size="1131479" download="eager" />
+    <jar href="lib/jasperreports-6.6.0.jar" size="5538977" download="eager" />
+    <jar href="lib/javase-3.3.0.jar" size="41451" download="eager" />
+    <jar href="lib/jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib/jna-4.4.0.jar" size="1091208" download="eager" />
+    <jar href="lib/jna-platform-4.4.0.jar" size="2281810" download="eager" />
+    <jar href="lib/json-simple-1.1.jar" size="16046" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib/org.apache.commons.logging_1.1.1.v201101211721.jar" size="73633" download="eager" />
+    <jar href="lib/org.jfree.chart-osgi_1.0.19.jar" size="1579535" download="eager" />
+    <jar href="lib/org.jfree.jcommon-osgi_1.0.23.jar" size="336187" download="eager" />
+    <jar href="lib/poi-3.15.jar" size="2579580" download="eager" />
+    <jar href="lib/sqlite-jdbc-3.8.11.2.jar" size="5575351" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ManajemenZakat" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="manajemenzakat.ManajemenZakat"  name="ManajemenZakat" />
+  <update check="always"/>
+</jnlp>

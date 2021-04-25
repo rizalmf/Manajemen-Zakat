@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="parent" alignment="TOP_CENTER" prefWidth="1920.0" spacing="15.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manajemenzakat.controller.child.ZakatTerimaController">
+   <children>
+      <VBox>
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <JFXButton onAction="#kembaliMenuZakat" ripplerFill="#d7d7d7" style="-fx-background-color: #0091a4; -fx-background-radius: 4px; -fx-padding: 3px 7px 3px 5px;" text="Kembali Ke Menu Zakat" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" />
+                     </graphic>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Form Penerimaan Zakat">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="8.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox maxWidth="600.0" spacing="22.0" style="-fx-background-color: white; -fx-background-radius: 5px;" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox>
+               <children>
+                  <HBox alignment="BOTTOM_LEFT">
+                     <children>
+                        <Label text="Nama Muzakki">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="TOP_RIGHT" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXButton fx:id="bKalkulator" onAction="#kalkulatorZakat" style="-fx-background-color: #0da70ac6; -fx-background-radius: 3px;" text="Kalkulator Zakat" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="CALCULATOR" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <JFXTextField fx:id="tfFormZakatNama" focusColor="#00a0b1" prefHeight="25.0" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Alamat">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox>
+                     <children>
+                        <JFXTextField fx:id="tfFormZakatAlamat" focusColor="#00a0b1" prefHeight="25.0" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="22.0" layoutY="17.0">
+               <children>
+                  <Label text="Jumlah Jiwa">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox>
+                     <children>
+                        <Spinner fx:id="spinnerFormZakat" prefWidth="56.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox>
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="Jenis Zakat">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox>
+                           <children>
+                              <JFXComboBox fx:id="cbJenisZakat" focusColor="#00a0b1" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox layoutX="22.0" layoutY="186.0">
+               <children>
+                  <Label text="Nominal">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                     <children>
+                        <JFXTextField fx:id="tfFormZakatNominal" alignment="CENTER_RIGHT" focusColor="#00a0b1" prefHeight="30.0" prefWidth="85.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label fx:id="lJenisNominal" text="Rupiah">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="4.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="lMsgFormZakat" textFill="RED">
+                     <VBox.margin>
+                        <Insets top="-5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="BOTTOM_LEFT" spacing="12.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton onAction="#simpanZakat" style="-fx-background-color: #0275d8; -fx-background-radius: 3px;" text="Simpan" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="10.0" onAction="#batalSimpanZakat" ripplerFill="#e0e0e0" style="-fx-background-color: red; -fx-background-radius: 3px;" text="Batal" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="12.0" right="12.0" top="7.0" />
+         </padding>
+         <effect>
+            <DropShadow height="6.17" radius="2.585" width="6.17" />
+         </effect>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporan-antrian" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="afe7ddeb-fab3-4d12-94ec-3a91b619abdd">
+	<property name="ireport.zoom" value="1.610510000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="41"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<field name="tanggal" class="java.lang.String"/>
+	<field name="kode" class="java.lang.String"/>
+	<field name="nama" class="java.lang.String"/>
+	<field name="user_nama" class="java.lang.String"/>
+	<field name="nominal" class="java.lang.Double"/>
+	<field name="jiwa" class="java.lang.String"/>
+	<field name="jenis_nama" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="8" width="551" height="36" uuid="ed7adffc-94cd-4a81-85f4-fd35cadad12b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="20"/>
+				</textElement>
+				<text><![CDATA[Tanda Terima Zakat]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="442" y="3" width="110" height="21" uuid="2fb8c27e-b986-48ba-9462-130ccebfbe44"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#ABABAB"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="452" y="24" width="100" height="21" uuid="403cdec5-b36b-40ff-9939-182b61930da9"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#ABABAB"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph rightIndent="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{user_nama}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="250" y="0" width="170" height="20" forecolor="#FFFFFF" backcolor="#A1C4BC" uuid="cd207b05-c1b2-4eec-be14-e552f8bf6ee5"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="rgba(255, 255, 255, 0.0)"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jiwa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="410" y="0" width="142" height="20" forecolor="#FFFFFF" backcolor="#A1C4BC" uuid="72849ce3-e2c9-49c4-a23d-a87274ac8320"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jenis Zakat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="0" width="109" height="20" forecolor="#FFFFFF" backcolor="#A1C4BC" uuid="75c2267d-aac8-47f2-93d0-dd071ec9b8db"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="410" y="68" width="143" height="20" forecolor="#FFFFFF" backcolor="#A1C4BC" uuid="b56ef1ee-dbd2-4a3f-8e24-79a4600bfc01"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nominal]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="100" y="24" width="160" height="21" uuid="70d6e891-bf62-46ac-a3a2-82caba99d49e"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#ABABAB"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph rightIndent="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="410" y="88" width="143" height="21" uuid="70341b46-72d9-41d6-8eee-996abf5cc6f6"/>
+				<box>
+					<pen lineWidth="1.5" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph rightIndent="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nominal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="98" y="0" width="162" height="20" forecolor="#FFFFFF" backcolor="#A1C4BC" uuid="8b21095a-6b66-452d-ac88-83343701c55d"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Muzakki]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="24" width="97" height="21" uuid="a53b4d30-299a-47f8-8f40-dc93b18a43e6"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#ABABAB"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kode}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="260" y="24" width="150" height="21" uuid="6405914a-fbdf-44d8-8374-69a3a488fbd1"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#ABABAB"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph rightIndent="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jiwa}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement x="410" y="24" width="142" height="21" uuid="a274e2ba-9118-49a0-b5d7-27ec68fe8786"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#ABABAB"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph rightIndent="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis_nama}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="19" splitType="Stretch">
+			<staticText>
+				<reportElement x="428" y="3" width="122" height="14" uuid="0027a266-7f86-489b-8ce8-8f29460850b4"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

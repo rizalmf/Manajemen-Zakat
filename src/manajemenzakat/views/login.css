@@ -1,0 +1,64 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-image:url("images/login.jpg");
+    /*-fx-background-repeat: no-repeat;*/
+    -fx-background-size: stretch;
+}
+.button{
+    -fx-background-color:transparent;
+    -fx-background-radius: 0px;
+}
+.text-field{
+    -fx-highlight-fill:#999999;
+}
+#hbTop{
+    -fx-alignment:TOP_RIGHT;
+    -fx-background-color: #013b46d7;
+}
+#vbTop{
+    -fx-alignment:TOP_CENTER;
+}
+#lLogo{
+    -fx-background-image:url("images/favicon.png");
+    -fx-background-size:stretch;
+}
+#bClose{
+    -fx-background-image:url("images/win/Close.png");
+    -fx-background-size: 100%;
+    /*-fx-background-repeat: no-repeat;*/
+}
+#bClose:hover{
+    -fx-background-image:url("images/win/Close-Hover.png");
+    -fx-background-size: 100%;
+    /*-fx-background-repeat: no-repeat;*/
+}
+#bMaxim{
+    -fx-background-image:url("images/win/Maximize.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100%;
+}
+#bMaxim:hover{
+    -fx-background-color:#ffffff41;
+    /*-fx-background-image:url("images/win/Maximize-Hover.png");*/
+}
+#bMinim{
+    -fx-background-image:url("images/win/Minimize.png");
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+}
+#bMinim:hover{
+    -fx-background-color:#ffffff41;
+    /*-fx-background-image:url("images/win/Minimize-Hover.png");*/
+}
+#paneParent{
+/*    -fx-background-color:#013b46;*/
+    -fx-background-color:#ffffffd7;
+    -fx-background-radius:6px;
+}
+#bLogin{
+    -fx-text-fill:white;
+    -fx-background-color: #013b46;
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manajemenzakat.controller.LoginController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+          <stylesheets>
+              <URL value="@login.css" />
+          </stylesheets>
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="179.0" prefHeight="46.0" prefWidth="262.0" text="Manajemen Zakat" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <HBox id="hbTop" onMouseDragged="#onDrag" onMousePressed="#onPress" prefHeight="26.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button id="bMinim" mnemonicParsing="false" onAction="#mini" prefHeight="20.0" prefWidth="45.0" />
+                  <Button id="bMaxim" disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="45.0" />
+                  <Button id="bClose" mnemonicParsing="false" onAction="#close" prefHeight="20.0" prefWidth="45.0" />
+               </children>
+            </HBox>
+            <Pane id="paneParent" layoutX="23.0" layoutY="226.0" prefHeight="240.0" prefWidth="236.0">
+               <children>
+                  <VBox id="vbTop" layoutX="18.0" prefWidth="199.0">
+                     <children>
+                        <Label text="Username">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="tfUser" alignment="CENTER" focusColor="#013b46" onKeyReleased="#keyRelease">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label text="Password">
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXPasswordField fx:id="tfPassword" alignment="CENTER" focusColor="#013b46" onKeyReleased="#keyRelease">
+                           <padding>
+                              <Insets bottom="7.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXButton id="bLogin" onAction="#login" prefHeight="35.0" prefWidth="205.0" text="Masuk">
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <Label fx:id="lMsg" alignment="CENTER" prefWidth="199.0" text="Username/password salah" textAlignment="CENTER" textFill="#ff0c0c" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Label layoutX="680.0" layoutY="579.0" text="2020@Manajemen Zakat" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="9.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label id="lLogo" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="96.0" prefHeight="22.0" prefWidth="22.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="2.0" />
+         </children>
+         <effect>
+            <DropShadow height="12.1" radius="5.55" width="12.1" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
