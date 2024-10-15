@@ -38,3 +38,6 @@ logo.psd
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
+
+# track all libs
+!lib/*
